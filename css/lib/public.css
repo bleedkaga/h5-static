@@ -208,7 +208,35 @@ a:focus {
     height: 4px;
     float: left;
     background-color: #2942EE;
+    transition: opacity 233ms, transform 233ms, visibility 233ms;
+    opacity: 0;
+    transform: translateX(200%);
+    visibility: hidden;
 }
+
+.nav-item.moveIn span i, .nav-item.active span i{
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.ma0{
+    transition-delay: 0s;
+}
+.ma1{
+    transition-delay: 100ms !important;
+}
+.ma2{
+    transition-delay: 200ms !important;
+}
+
+
+.nav-item.moveOut span i{
+    opacity: 0;
+    transform: translateX(-200%);
+    visibility: hidden;
+}
+
 
 /*页脚*/
 .footer {
@@ -291,6 +319,7 @@ a:focus {
     font-size: 16px;
     margin-top: 8px;
 }
+
 .underline {
     position: relative;
 }
