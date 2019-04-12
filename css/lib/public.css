@@ -1,3 +1,11 @@
+body{
+    visibility: hidden;
+}
+
+body.active{
+    visibility: visible;
+}
+
 a {
     transition: opacity 200ms;
     -webkit-transition: opacity 200ms;
@@ -120,8 +128,11 @@ a:focus {
 .header {
     width: 100%;
     height: 100px;
-    position: relative;
-    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999;
 }
 
 .header .logo {
@@ -209,31 +220,52 @@ a:focus {
     float: left;
     background-color: #2942EE;
     transition: opacity 233ms, transform 233ms, visibility 233ms;
+    -webkit-transition: opacity 233ms, -webkit-transform 233ms, visibility 233ms;
+    -moz-transition: opacity 233ms, -moz-transform 233ms, visibility 233ms;
+    -o-transition: opacity 233ms, -o-transform 233ms, visibility 233ms;
     opacity: 0;
     transform: translateX(200%);
+    -webkit-transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    -o-transform: translateX(200%);
     visibility: hidden;
 }
 
 .nav-item.moveIn span i, .nav-item.active span i{
     opacity: 1;
     transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
     visibility: visible;
 }
 
 .ma0{
     transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
 }
 .ma1{
     transition-delay: 100ms !important;
+    -webkit-transition-delay:  100ms !important;
+    -moz-transition-delay:  100ms !important;
+    -o-transition-delay:  100ms !important;
 }
 .ma2{
     transition-delay: 200ms !important;
+    -webkit-transition-delay:  200ms !important;
+    -moz-transition-delay:  200ms !important;
+    -o-transition-delay:  200ms !important;
 }
 
 
 .nav-item.moveOut span i{
     opacity: 0;
     transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    -o-transform: translateX(-200%);
     visibility: hidden;
 }
 
@@ -318,6 +350,28 @@ a:focus {
     color: #BABDC6;
     font-size: 16px;
     margin-top: 8px;
+}
+
+/*内容容器*/
+.bg-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.content {
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+}
+
+.page-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
 
 .underline {
