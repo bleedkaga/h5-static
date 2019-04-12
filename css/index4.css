@@ -1,0 +1,93 @@
+.section1 {
+  height: 724px;
+  background-image: url("../images/index4/banner.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section1 .inline {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 317px;
+}
+.section1 .inline .title {
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+}
+
+.section2 .title,
+.section3 .title,
+.section4 .title {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.section2 .desc {
+  padding-top: 30px;
+  color: #7B7D85;
+  font-size: 18px;
+}
+.section2 .tools {
+  width: 1200px;
+  margin: 125px auto 140px;
+}
+.section2 .tools .tools-container {
+  overflow: hidden;
+}
+.section2 .tools .tools-container .tools-item {
+  width: 50%;
+  float: left;
+  margin-bottom: 82px;
+}
+.section2 .tools .tools-container .tools-item .icon {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 28px;
+}
+.section2 .tools .tools-container .tools-item span {
+  font-size: 24px;
+  color: #2E334E;
+  width: 430px;
+  display: inline-block;
+  line-height: 36px;
+  padding-top: 27px;
+}
+
+.section3 {
+  background: #E7EDFF;
+}
+.section3 .desc {
+  padding-top: 29px;
+  color: #7B7D85;
+  font-size: 18px;
+}
+.section3 .tools {
+  padding-bottom: 58px;
+  margin-bottom: 0;
+}
+
+.section4 {
+  background: #fff;
+}
+.section4 .desc {
+  padding-top: 29px;
+  color: #7B7D85;
+  font-size: 18px;
+}
+.section4 .tools {
+  padding-bottom: 58px;
+  margin-bottom: 0;
+}
+.section4 .tools .tools-container .tools-item {
+  width: 100%;
+}
+.section4 .tools .tools-container .tools-item span {
+  width: auto;
+}
+
+/*# sourceMappingURL=index4.css.map */

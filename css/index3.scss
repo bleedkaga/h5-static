@@ -1,0 +1,43 @@
+.section1{
+  height: 724px;
+  background-image: url('../images/index3/banner.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .inline{
+    width: 1180px;
+    margin:0 auto;
+    padding-top:139px;
+    .title{
+      font-size: 60px;
+      color: #fff;
+      margin-left: 322px;
+    }
+    .desc{
+      margin-left: 322px;
+      line-height: 60px;
+      font-size: 24px;
+      margin-top: 59px;
+      color: #fff;
+    }
+  }
+}
+.section2,
+.section3,
+.section4{
+  .title{
+    text-align:center;
+    padding-top:101px;
+    font-size: 35px;
+    font-weight: normal;
+  }
+}
+.section2{
+  height: 643px;
+}
+.section3{
+  background: #E7EDFF;
+  .using{
+    height: 400px;
+  }
+}

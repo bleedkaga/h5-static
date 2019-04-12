@@ -1,0 +1,46 @@
+.section1 {
+  height: 724px;
+  background-image: url("../images/index3/banner.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section1 .inline {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 139px;
+}
+.section1 .inline .title {
+  font-size: 60px;
+  color: #fff;
+  margin-left: 322px;
+}
+.section1 .inline .desc {
+  margin-left: 322px;
+  line-height: 60px;
+  font-size: 24px;
+  margin-top: 59px;
+  color: #fff;
+}
+
+.section2 .title,
+.section3 .title,
+.section4 .title {
+  text-align: center;
+  padding-top: 101px;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.section2 {
+  height: 643px;
+}
+
+.section3 {
+  background: #E7EDFF;
+}
+.section3 .using {
+  height: 400px;
+}
+
+/*# sourceMappingURL=index3.css.map */
