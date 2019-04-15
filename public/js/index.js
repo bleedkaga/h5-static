@@ -1,8 +1,4 @@
 (function () {
-    function range(a, b) {
-        return Math.floor(Math.random() * (b - a) + a);
-    }
-
     var _window = $(window);
     var _header = $('.header');
     _window.on("scroll", function () {

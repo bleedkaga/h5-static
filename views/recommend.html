@@ -4,8 +4,9 @@
 <%-include('_header.html', {active: pathname})%>
 <div class="content">
     <div class="section1">
-        <div class="inline">
-            <h1 class="title">拥抱组织易，让组织动员更容易</h1>
+        <div class="bg-box"><img class="iv_image" src="<%=staticPath%>/images/index4/banner.png"></div>
+        <div class="inline parallax_box">
+            <h1 class="title layer">拥抱组织易，让组织动员更容易</h1>
         </div>
     </div>
 
@@ -87,4 +88,28 @@
 <%include _footer.html%>
 </body>
 <%include _footer_js.html%>
+<script>
+    var textMap = [
+        {
+            text: '拥抱组织易，让组织动员更容易',
+            o: $('.section1 .inline .title')
+        }
+    ];
+    var gather = [];
+    textMap.forEach(function (tm) {
+        tm.o.html('');
+        tm.text.split('').forEach(function (t) {
+            tm.o.append('<i>' + t + '</i>');
+        });
+        gather = gather.concat($.makeArray(tm.o.find('i')));
+    });
+
+    TweenMax.set(gather, {autoAlpha: 0});
+    TweenMax.staggerTo(gather, 0.8, {
+        autoAlpha: 1,
+        ease: Power1.easeIn
+    }, 0.05);
+
+</script>
+
 <%include _end.html%>

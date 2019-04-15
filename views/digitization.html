@@ -4,26 +4,28 @@
 <%-include('_header.html', {active: pathname})%>
 <div class="content">
     <div class="section1">
-        <div class="inline">
-            <h1 class="title">心灵自由和为结果而战并不矛盾2</h1>
+        <div class="bg-box"><img class="iv_image" src="<%=staticPath%>/images/index2/banner.png"></div>
+        <div class="inline parallax_box">
+            <h1 class="title layer">心灵自由和为结果而战并不矛盾</h1>
             <div class="desc">
-                <span class="indent">有一群人</span>
-                <p>他们有情怀、有知识、有技术</p>
-                <p>他们为灵魂自由而欢愉</p>
-                <p>但他们更希望为了明确的目标和结果而战</p>
-                <p>灵魂不灭，热血不冷，战斗不息，生命不止</p>
+                <span class="indent layer">有一群人</span>
+                <p class="p1 layer">他们有情怀、有知识、有技术</p>
+                <p class="p2 layer">他们为灵魂自由而欢愉</p>
+                <p class="p3 layer">但他们更希望为了明确的目标和结果而战</p>
+                <p class="p4 layer">灵魂不灭，热血不冷，战斗不息，生命不止</p>
             </div>
-        </div>
+        </div>w
     </div>
 
     <div class="section2">
-        <h1 class="title underline">数字化零工 <i class="inline"></i></h1>
+        <div class="pub-title"><span>数字化零工</span><i></i></div>
         <p class="info">当今时代，互联网已经给各行各业的劳动者带来了便利性，而对于所有在网络上的数字零工而言，却没有一个共同的组织，共同的家。为了帮助每个人都能通过自己最热爱的工作赚钱，让工作和劳动变成一件充实而快乐的事情，组织易专为这群数字化零工创建了一个社区，这里有零工工会、专业的同行、这里有多劳多得优工优奖的公平环境、这里有即时结算,不拖欠不压钱的安全保障！同时，组织易还运用平台优势，收集优良工艺工法，进行线上分享和线下培训，帮助大家学习成长提升技能。此外，组织易还设立了关爱计划、帮扶基金，帮助遇到重大困难的零工们渡过难关。我们相信，通过平台的不断壮大，中国的数字零工将不再是别人眼中的“无根之萍、无源之水”，而是一群充满热情和欢乐，拥有专业技术的、职业素养的、靠勤劳双手创造幸福的社会中坚。</p>
     </div>
 
     <div class="section3 ">
-        <h1 class="title underline">零工风采 <i class="inline"></i></h1>
-        <div class="ling f-cb">
+        <div class="pub-title"><span>零工风采</span><i></i></div>
+
+        <div class="ling">
             <div class="item">
                 <img src="<%=staticPath%>/images/index2/ling.png" alt="">
             </div>
@@ -65,7 +67,8 @@
     </div>
 
     <div class="section4">
-        <h1 class="title">零工分布 </h1>
+        <div class="pub-title"><span>零工分布</span><i></i></div>
+
         <p class="desc">全国已有10余城市20000余人入驻组织易平台</p>
         <img class="map" src="<%=staticPath%>/images/index2/map.png" alt="">
     </div>
@@ -73,4 +76,47 @@
 <%include _footer.html%>
 </body>
 <%include _footer_js.html%>
+<script>
+    var textMap = [
+        {
+            text: '心灵自由和为结果而战并不矛盾',
+            o: $('.section1 .inline .title')
+        },
+        {
+            text: '有一群人',
+            o: $('.section1 .inline .indent')
+        },
+        {
+            text: '他们有情怀、有知识、有技术',
+            o: $('.section1 .inline .p1')
+        },
+        {
+            text: '他们为灵魂自由而欢愉',
+            o: $('.section1 .inline .p2')
+        },
+        {
+            text: '但他们更希望为了明确的目标和结果而战',
+            o: $('.section1 .inline .p3')
+        },
+        {
+            text: '灵魂不灭，热血不冷，战斗不息，生命不止',
+            o: $('.section1 .inline .p4')
+        }
+    ];
+    var gather = [];
+    textMap.forEach(function (tm) {
+        tm.o.html('');
+        tm.text.split('').forEach(function (t) {
+            tm.o.append('<i>' + t + '</i>');
+        });
+        gather = gather.concat($.makeArray(tm.o.find('i')));
+    });
+
+    TweenMax.set(gather, {autoAlpha: 0});
+    TweenMax.staggerTo(gather, 0.6, {
+        autoAlpha: 1,
+        ease: Power1.easeIn
+    }, 0.05);
+
+</script>
 <%include _end.html%>
