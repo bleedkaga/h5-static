@@ -3,7 +3,6 @@
 <body>
 <%-include('_header.html', {active: pathname})%>
 <div class="content">
-
     <div class="section1">
         <div class="bg-box"><img class="iv_image" src="<%=staticPath%>/images/index3/banner.png"></div>
         <div class="inline parallax_box">
@@ -22,46 +21,46 @@
         <h1 class="title underline">外包类型</h1>
         <div class="epiboly-box">
             <div class="swiper-container epiboly-sc">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                <div class="swiper-wrapper p-3d">
+                    <div class="swiper-slide p-3d">
                         <ul class="epiboly-list">
-                            <li class="hvr-shrink"><span>咨询外包</span></li>
-                            <li class="hvr-shrink"><span>管理外包</span></li>
-                            <li class="hvr-shrink"><span>事务外包</span></li>
-                            <li class="hvr-shrink"><span>营销外包</span></li>
-                            <li class="hvr-shrink"><span>辅助外包</span></li>
-                            <li class="hvr-shrink"><span>技术外包</span></li>
-                            <li class="hvr-shrink"><span>信息外包</span></li>
-                            <li class="hvr-shrink"><span>设计外包</span></li>
-                            <li class="hvr-shrink"><span>制造外包</span></li>
+                            <li class="p-3d"><span>咨询外包</span></li>
+                            <li class="p-3d"><span>管理外包</span></li>
+                            <li class="p-3d"><span>事务外包</span></li>
+                            <li class="p-3d"><span>营销外包</span></li>
+                            <li class="p-3d"><span>辅助外包</span></li>
+                            <li class="p-3d"><span>技术外包</span></li>
+                            <li class="p-3d"><span>信息外包</span></li>
+                            <li class="p-3d"><span>设计外包</span></li>
+                            <li class="p-3d"><span>制造外包</span></li>
                             <div class="f-clear"></div>
                         </ul>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide p-3d">
                         <ul class="epiboly-list">
-                            <li class="hvr-shrink"><span>服务外包</span></li>
-                            <li class="hvr-shrink"><span>宣传外包</span></li>
-                            <li class="hvr-shrink"><span>运营外包</span></li>
-                            <li class="hvr-shrink"><span>知识外包</span></li>
-                            <li class="hvr-shrink"><span>教育外包</span></li>
-                            <li class="hvr-shrink"><span>培训外包</span></li>
-                            <li class="hvr-shrink"><span>代理外包</span></li>
-                            <li class="hvr-shrink"><span>融资外包</span></li>
-                            <li class="hvr-shrink"><span>风控外包</span></li>
+                            <li class="p-3d"><span>服务外包</span></li>
+                            <li class="p-3d"><span>宣传外包</span></li>
+                            <li class="p-3d"><span>运营外包</span></li>
+                            <li class="p-3d"><span>知识外包</span></li>
+                            <li class="p-3d"><span>教育外包</span></li>
+                            <li class="p-3d"><span>培训外包</span></li>
+                            <li class="p-3d"><span>代理外包</span></li>
+                            <li class="p-3d"><span>融资外包</span></li>
+                            <li class="p-3d"><span>风控外包</span></li>
                             <div class="f-clear"></div>
                         </ul>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide p-3d">
                         <ul class="epiboly-list">
-                            <li class="hvr-shrink"><span>事务外包</span></li>
-                            <li class="hvr-shrink"><span>内容外包</span></li>
-                            <li class="hvr-shrink"><span>分发外包</span></li>
-                            <li class="hvr-shrink"><span>数据外包</span></li>
-                            <li class="hvr-shrink"><span>测试外包</span></li>
-                            <li class="hvr-shrink"><span>运维外包</span></li>
-                            <li class="hvr-shrink"><span>施工外包</span></li>
-                            <li class="hvr-shrink"><span>活动外包</span></li>
-                            <li class="hvr-shrink"><span>团建外包</span></li>
+                            <li class="p-3d"><span>事务外包</span></li>
+                            <li class="p-3d"><span>内容外包</span></li>
+                            <li class="p-3d"><span>分发外包</span></li>
+                            <li class="p-3d"><span>数据外包</span></li>
+                            <li class="p-3d"><span>测试外包</span></li>
+                            <li class="p-3d"><span>运维外包</span></li>
+                            <li class="p-3d"><span>施工外包</span></li>
+                            <li class="p-3d"><span>活动外包</span></li>
+                            <li class="p-3d"><span>团建外包</span></li>
                             <div class="f-clear"></div>
                         </ul>
                     </div>
@@ -109,9 +108,9 @@
         }
     ];
     var gather = [];
-    textMap.forEach(function (tm) {
+    $.each(textMap, function (i, tm) {
         tm.o.html('');
-        tm.text.split('').forEach(function (t) {
+        $.each(tm.text.split(''), function (i, t) {
             tm.o.append('<i>' + t + '</i>');
         });
         gather = gather.concat($.makeArray(tm.o.find('i')));

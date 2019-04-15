@@ -104,9 +104,9 @@
         }
     ];
     var gather = [];
-    textMap.forEach(function (tm) {
+    $.each(textMap, function (i, tm) {
         tm.o.html('');
-        tm.text.split('').forEach(function (t) {
+        $.each(tm.text.split(''), function (i, t) {
             tm.o.append('<i>' + t + '</i>');
         });
         gather = gather.concat($.makeArray(tm.o.find('i')));

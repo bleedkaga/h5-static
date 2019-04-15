@@ -1,5 +1,7 @@
 .section1 {
   position: relative;
+  left: 0;
+  top: 0;
   height: 824px;
   /*background-image: url("../images/index2/banner.png");*/
   /*-webkit-background-size: cover;*/
@@ -8,6 +10,8 @@
 }
 .section1 .inline {
   position: relative;
+  left: 0;
+  top: 0;
   z-index: 2;
   width: 1180px;
   margin: 0 auto;

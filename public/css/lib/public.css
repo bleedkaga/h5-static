@@ -2,83 +2,83 @@ a {
     transition: opacity 200ms;
     -webkit-transition: opacity 200ms;
     -moz-transition: opacity 200ms;
-    -o-transition: opacity 200ms;
+    -o-transition: opacity 200ms
 }
 
 a:not(.not_hover):hover {
-    opacity: 0.9;
+    opacity: .9
 }
 
 a:not(.not_active):active {
-    opacity: 0.7;
+    opacity: .7
 }
 
 a:focus {
-    outline: none;
+    outline: 0
 }
 
 .ad-01 {
-    animation-delay: 0.1s;
-    -webkit-animation-delay: 0.1s;
+    animation-delay: .1s;
+    -webkit-animation-delay: .1s
 }
 
 .ad-02 {
-    animation-delay: 0.2s;
-    -webkit-animation-delay: 0.2s;
+    animation-delay: .2s;
+    -webkit-animation-delay: .2s
 }
 
 .ad-03 {
-    animation-delay: 0.3s;
-    -webkit-animation-delay: 0.3s;
+    animation-delay: .3s;
+    -webkit-animation-delay: .3s
 }
 
 .ad-04 {
-    animation-delay: 0.4s;
-    -webkit-animation-delay: 0.4s;
+    animation-delay: .4s;
+    -webkit-animation-delay: .4s
 }
 
 .ad-05 {
-    animation-delay: 0.5s;
-    -webkit-animation-delay: 0.5s;
+    animation-delay: .5s;
+    -webkit-animation-delay: .5s
 }
 
 .ad-06 {
-    animation-delay: 0.6s;
-    -webkit-animation-delay: 0.6s;
+    animation-delay: .6s;
+    -webkit-animation-delay: .6s
 }
 
 .ad-07 {
-    animation-delay: 0.7s;
-    -webkit-animation-delay: 0.7s;
+    animation-delay: .7s;
+    -webkit-animation-delay: .7s
 }
 
 .ad-08 {
-    animation-delay: 0.8s;
-    -webkit-animation-delay: 0.8s;
+    animation-delay: .8s;
+    -webkit-animation-delay: .8s
 }
 
 .ad-09 {
-    animation-delay: 0.9s;
-    -webkit-animation-delay: 0.9s;
+    animation-delay: .9s;
+    -webkit-animation-delay: .9s
 }
 
 .ad-10 {
     animation-delay: 1s;
-    -webkit-animation-delay: 1s;
+    -webkit-animation-delay: 1s
 }
 
 .ad-12 {
     animation-delay: 1.2s;
-    -webkit-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s
 }
 
 .ad-14 {
     animation-delay: 1.4s;
-    -webkit-animation-delay: 1.4s;
+    -webkit-animation-delay: 1.4s
 }
 
 .min_w {
-    min-width: 1300px;
+    min-width: 1300px
 }
 
 .bg_cover {
@@ -87,18 +87,16 @@ a:focus {
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    background-size: cover;
-    /*-ms-behavior: url(libs/backgroundSize/0.2.0/backgroundsize.min.htc);*/
-    /*behavior: url(libs/backgroundSize/0.2.0/backgroundsize.min.htc);*/
+    background-size: cover
 }
 
 @media screen and (max-width: 1300px) {
     .hd_nav_center ul li {
-        margin: 0 30px;
+        margin: 0 30px
     }
 
     .hy_page_1 .pagination {
-        bottom: 30px;
+        bottom: 30px
     }
 }
 
@@ -108,15 +106,14 @@ a:focus {
     transition: opacity 233ms, visibility 233ms;
     -webkit-transition: opacity 233ms, visibility 233ms;
     -o-transition: opacity 233ms, visibility 233ms;
-    -moz-transition: opacity 233ms, visibility 233ms;
+    -moz-transition: opacity 233ms, visibility 233ms
 }
 
 .iv_image.active {
     opacity: 1;
-    visibility: visible;
+    visibility: visible
 }
 
-/*头部*/
 .header {
     width: 100%;
     height: 100px;
@@ -125,7 +122,7 @@ a:focus {
     left: 0;
     background-color: #fff;
     z-index: 999;
-    border-bottom: 1px solid #E5E5E5
+    border-bottom: 1px solid #e5e5e5
 }
 
 .header .logo {
@@ -136,7 +133,7 @@ a:focus {
     position: absolute;
     left: 42px;
     top: 28px;
-    z-index: 2;
+    z-index: 2
 }
 
 .header .header-btns {
@@ -144,23 +141,60 @@ a:focus {
     right: 0;
     top: 30px;
     padding-right: 55px;
-    z-index: 2;
+    z-index: 2
 }
 
 .header .header-btns a {
+    position: relative;
     display: inline-block;
-    color: #2942EE;
-    width: 124px;
-    height: 40px;
-    border: 2px solid rgba(41, 66, 238, 1);
-    border-radius: 22px;
+    *display: inline;
+    *zoom: 1;
+    width: 128px;
+    height: 44px;
     text-align: center;
-    font-size: 16px;
-    line-height: 40px;
+    font-size: 16px
 }
 
 .header .header-btns a + a {
-    margin-left: 38px;
+    margin-left: 38px
+}
+
+.header .header-btns a em {
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+    width: 124px;
+    height: 40px;
+    color: #2942ee;
+    line-height: 40px;
+    border: 2px solid rgba(41, 66, 238, 1);
+    border-radius: 22px
+}
+
+.header .header-btns a i {
+    display: block;
+    width: 124px;
+    height: 40px;
+    background-color: #2942ee;
+    border: 2px solid #2942ee;
+    border-radius: 22px;
+    color: #fff;
+    line-height: 40px
+}
+
+.header .header-btns a span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 44px;
+    width: 0;
+    transition: width 332ms ease-out
+}
+
+.header .header-btns a:hover span {
+    width: 128px
 }
 
 .nav-container {
@@ -169,18 +203,18 @@ a:focus {
     padding-right: 349px;
     padding-top: 30px;
     z-index: 1;
-    text-align: right;
+    text-align: right
 }
 
 .nav-container .nav {
-    display: inline-block;
+    float: right
 }
 
 .nav-container .nav li {
     float: left;
     width: 128px;
     height: 44px;
-    text-align: center;
+    text-align: center
 }
 
 .nav-item {
@@ -189,12 +223,12 @@ a:focus {
     width: 100%;
     height: 100%;
     line-height: 44px;
-    color: #2E334E;
-    font-size: 16px;
+    color: #2e334e;
+    font-size: 16px
 }
 
 .nav-item:hover, .nav-item.active {
-    color: #2942EE;
+    color: #2942ee
 }
 
 .nav-item span {
@@ -204,14 +238,14 @@ a:focus {
     height: 4px;
     left: 50%;
     margin-left: -9px;
-    bottom: -4px;
+    bottom: -4px
 }
 
 .nav-item span i {
     width: 6px;
     height: 4px;
     float: left;
-    background-color: #2942EE;
+    background-color: #2942ee;
     transition: opacity 133ms, transform 133ms, visibility 133ms;
     -webkit-transition: opacity 133ms, -webkit-transform 133ms, visibility 133ms;
     -moz-transition: opacity 133ms, -moz-transform 133ms, visibility 133ms;
@@ -221,269 +255,287 @@ a:focus {
     -webkit-transform: translateX(200%);
     -moz-transform: translateX(200%);
     -o-transform: translateX(200%);
-    visibility: hidden;
+    visibility: hidden
 }
 
-.nav-item.moveIn span i, .nav-item.active span i{
+.nav-item.moveIn span i, .nav-item.active span i {
     opacity: 1;
     transform: translateX(0);
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -o-transform: translateX(0);
-    visibility: visible;
+    visibility: visible
 }
 
-.ma0{
+.ma0 {
     transition-delay: 0s;
     -webkit-transition-delay: 0s;
     -moz-transition-delay: 0s;
-    -o-transition-delay: 0s;
+    -o-transition-delay: 0s
 }
-.ma1{
+
+.ma1 {
     transition-delay: 100ms !important;
-    -webkit-transition-delay:  100ms !important;
-    -moz-transition-delay:  100ms !important;
-    -o-transition-delay:  100ms !important;
+    -webkit-transition-delay: 100ms !important;
+    -moz-transition-delay: 100ms !important;
+    -o-transition-delay: 100ms !important
 }
-.ma2{
+
+.ma2 {
     transition-delay: 200ms !important;
-    -webkit-transition-delay:  200ms !important;
-    -moz-transition-delay:  200ms !important;
-    -o-transition-delay:  200ms !important;
+    -webkit-transition-delay: 200ms !important;
+    -moz-transition-delay: 200ms !important;
+    -o-transition-delay: 200ms !important
 }
 
-
-.nav-item.moveOut span i{
+.nav-item.moveOut span i {
     opacity: 0;
     transform: translateX(-200%);
     -webkit-transform: translateX(-200%);
     -moz-transform: translateX(-200%);
     -o-transform: translateX(-200%);
-    visibility: hidden;
+    visibility: hidden
 }
 
-
-/*页脚*/
 .footer {
-    background-color: #7B7D85;
+    background-color: #7b7d85;
     width: 100%;
-    height: 377px;
+    height: 377px
 }
 
 .footer-box {
     margin: auto;
-    width: 1240px;
+    width: 1240px
 }
 
-.footer-t1,
-.footer-t2,
-.footer-t3,
-.footer-t4,
-.footer-t5,
-.footer-t6 {
-    color: #BABDC6;
-    font-size: 16px;
+.footer-t1, .footer-t2, .footer-t3, .footer-t4, .footer-t5, .footer-t6 {
+    color: #babdc6;
+    font-size: 16px
 }
 
 .footer-t4, .footer-t6 {
     display: block;
-    font-size: 40px;
+    font-size: 40px
 }
 
-.footer-t4:hover,
-.footer-t6:hover,
-.footer-t4:visited,
-.footer-t6:visited
-{
-    color: #BABDC6;
+.footer-t4:hover, .footer-t6:hover, .footer-t4:visited, .footer-t6:visited {
+    color: #babdc6
 }
 
-.footer-t1{
-    margin-top: 48px;
+.footer-t1 {
+    margin-top: 48px
 }
 
-.footer-t2{
-    margin-top: 18px;
+.footer-t2 {
+    margin-top: 18px
 }
 
-.footer-t3, .footer-t5{
-    margin-top: 38px;
+.footer-t3, .footer-t5 {
+    margin-top: 38px
 }
 
-.footer-t4, .footer-t6{
-    margin-top: 8px;
+.footer-t4, .footer-t6 {
+    margin-top: 8px
 }
 
-.footer-right{
+.footer-right {
     margin-left: 170px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 40px
 }
 
-
-.footer-right .code{
+.footer-right .code {
     display: block;
     width: 208px;
     height: 208px;
-    background-color: #fff;
+    background-color: #fff
 }
 
-.footer-right .code img{
+.footer-right .code img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100%
 }
 
-.footer-right .code2{
-    margin-left: 60px;
+.footer-right .code2 {
+    margin-left: 60px
 }
 
-.footer-right span{
+.footer-right span {
     display: block;
-    color: #BABDC6;
+    color: #babdc6;
     font-size: 16px;
-    margin-top: 8px;
+    margin-top: 8px
 }
 
-/*内容容器*/
 .bg-box {
     position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
     z-index: 1;
+    top: 0;
+    left: 0
 }
 
 .content {
     width: 100%;
     padding-top: 100px;
-    position: relative;
+    position: relative
 }
 
 .page-content {
     position: relative;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 2
 }
 
 .underline {
-    position: relative;
+    position: relative
 }
-.underline:after{
-     content: '';
-     width: 90px;
-     height: 3px;
-     background: #000;
-     display: inline-block;
-     position:absolute;
-     bottom:-30px;
-     left:50%;
-     margin-left: -45px;
- }
-.text-center{
-    text-align:center;
+
+.underline:after {
+    content: '';
+    width: 90px;
+    height: 3px;
+    background: #000;
+    display: inline-block;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -45px
+}
+
+.text-center {
+    text-align: center
 }
 
 .pub-title {
     padding-top: 100px;
     width: 100%;
-    text-align: center;
+    text-align: center
 }
 
 .pub-title span {
-    color: #2E334E;
-    font-size: 35px;
+    color: #2e334e;
+    font-size: 35px
 }
 
 .pub-title i {
     display: block;
     width: 90px;
     height: 3px;
-    background-color: #2E334E;
-    margin: 30px auto auto;
+    background-color: #2e334e;
+    margin: 30px auto auto
 }
 
-.epiboly-sc{
+.epiboly-sc {
     margin: auto;
     width: 1024px;
     height: 100%;
+
+    perspective: 2200px;
+    -webkit-perspective: 2200px;
+    -moz-perspective: 2200px;
+    -ms-perspective: 2200px;
 }
+
 
 .pagination {
     position: absolute;
     z-index: 20;
     bottom: 10px;
     width: 100%;
-    text-align: center;
+    text-align: center
 }
+
 .swiper-pagination-switch {
     display: inline-block;
     width: 14px;
     height: 14px;
     border-radius: 7px;
-    background: #BABDC6;
+    background: #babdc6;
     margin: 0 5px;
-    opacity: 0.8;
+    opacity: .8;
     border: 1px solid #fff;
     cursor: pointer;
     transition: width 233ms, background-color 233ms;
     -webkit-transition: width 233ms, background-color 233ms;
     -moz-transition: width 233ms, background-color 233ms;
-    -o-transition: width 233ms, background-color 233ms;
+    -o-transition: width 233ms, background-color 233ms
 }
+
 .swiper-active-switch {
-    background: #2942EE;
-    width: 34px;
+    background: #2942ee;
+    width: 34px
 }
 
-.swiper-slide{
+.swiper-slide {
     width: 1024px;
-    /*height: 492px;*/
 }
 
-.epiboly-list li{
+.p-3d {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+
+.epiboly-list li {
     float: left;
     width: 33.333333333%;
     padding-bottom: 50px;
+
+    perspective: 1200px;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
 }
 
-.epiboly-list li span{
+.epiboly-list li span {
     width: 290px;
     display: block;
     border: 2px #2942ee solid;
-    color: #2E334E;
+    color: #2e334e;
     font-size: 24px;
     text-align: center;
     height: 102px;
     line-height: 102px;
     margin: auto;
+    background-color: #fff;
 }
 
-.epiboly-prev, .epiboly-next{
+.epiboly-list li span i{
+    display: inline-block;
+}
+
+.epiboly-prev, .epiboly-next {
     display: block;
     position: absolute;
     background-color: transparent;
-    border: none;
+    border: 0;
     width: 38px;
     height: 70px;
-    top: 171px;
+    top: 171px
 }
 
-.epiboly-prev:active{
-    opacity: 0.8;
+.epiboly-prev:active {
+    opacity: .8
 }
 
-.epiboly-prev{
+.epiboly-prev {
     left: 0;
-    background: url(../../images/i2-1.png) center no-repeat;
+    background: url(../../images/i2-1.png) center no-repeat
 }
 
-.epiboly-next{
+.epiboly-next {
     right: 0;
-    background: url(../../images/i2-0.png) center no-repeat;
+    background: url(../../images/i2-0.png) center no-repeat
 }
 
-.layer{
-    position: relative !important;
+.layer {
+    position: relative !important
 }

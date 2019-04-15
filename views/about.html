@@ -11,7 +11,7 @@
                 <li><a href="javascript:;"><span>联系我们</span></a></li>
             </ul>
             <div class="about-view">
-                <div class="menu-box about-us" data-height="350">
+                <div class="menu-box about-us show" data-height="350">
                     <b>组织易</b>
                     是固守至诚科技集团旗下产品，至2011年开始研究和研发一直致力于组织关系、企业管理、数字技术的研发。组织易，中国数字化按需用工服务商。业务重点犹如其名，寓意：为中国企业汇聚万千人才；让行业人有好活，好生活。组织易是为零工市场提供按需用工服务的互联网平台，一边面向企业和广泛组织，一边面向零工。集成辅助服务，由评价专家进行任务标准体系建设，为用工方提供一站式外包交付服务。产品优势:第一是即时性，让用工方随时随地可以找到需要的人才，解决用工荒问题，同时让工人不必再因缺少信息来源而造成劳动力闲置；第二是扁平化结算，用工端到工人端不再经过层层剥削，降低用工方本提高工人收益，并规避财务风险；第三是评价机制，用工方可用积分对服务进行评价，评价影响零工的等级，从而影响其收益和平台权益。
                     组织易运用基于互联网模式和最新的数字技术，结合最新的财税、社保政策和组织管理模式，服务好企业的同时更是造福数以亿计的零工，为所有劳动者实现伟大的中国梦贡献科技力量！
@@ -23,20 +23,21 @@
                         <a href="javascript:;" class="button">查看详情<i>&nbsp;→</i></a>
                     </div>
                     <div class="card hvr-grow">
-                        <h1 class="title">注册税务师（北京）</h1>
+                        <h1 class="title">注册薪税师（北京）</h1>
                         <a href="javascript:;" class="button">查看详情<i>&nbsp;→</i></a>
                     </div>
                     <div class="card hvr-grow">
-                        <h1 class="title">注册税务师（北京）</h1>
+                        <h1 class="title">企业管理咨询顾问（北京）</h1>
                         <a href="javascript:;" class="button">查看详情<i>&nbsp;→</i></a>
                     </div>
                     <div class="card hvr-grow">
-                        <h1 class="title">注册税务师（北京）</h1>
+                        <h1 class="title">行业解决方案工程师（北京）</h1>
                         <a href="javascript:;" class="button">查看详情<i>&nbsp;→</i></a>
                     </div>
+                    <div class="f-clear"></div>
                 </div>
 
-                <div class="menu-box contact-us show" data-height="850">
+                <div class="menu-box contact-us" data-height="850">
                     <!--北京-->
                     <div class="card hvr-grow">
                         <div class="card-head">
@@ -55,7 +56,7 @@
                         </ul>
                     </div>
                     <!--上海-->
-                    <div class="card hvr-grow">
+                    <div class="card hvr-grow last">
                         <div class="card-head">
                             上海：（华东片区）
                         </div>
@@ -89,7 +90,7 @@
                         </ul>
                     </div>
                     <!--重庆-->
-                    <div class="card hvr-grow">
+                    <div class="card hvr-grow last">
                         <div class="card-head">
                             重庆：（西南片区）
                         </div>
@@ -122,6 +123,8 @@
                             <li><a href="tel:4000010711"><i class="iconfont iconkefu"></i>4000010711</a></li>
                         </ul>
                     </div>
+
+                    <div class="f-clear"></div>
                 </div>
             </div>
         </div>
@@ -144,7 +147,8 @@
                 var h = _targetBox.addClass('show').data('height');
                 _about_view.css('height', h);
             })
-        })
+        });
+        _as.eq(0).trigger('click');
     })
 </script>
 <%include _end.html%>

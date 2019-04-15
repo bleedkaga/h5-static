@@ -32,7 +32,25 @@ body.active{
 
 .index-body .header .header-btns a {
     color: #fff;
+    /*border: 2px solid #fff;*/
+}
+
+.index-body .header .header-btns a em{
+    color: #fff;
+    line-height: 40px;
     border: 2px solid #fff;
+    border-radius: 22px;
+}
+
+.header .header-btns a i{
+    display: block;
+    width: 124px;
+    height: 40px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 22px;
+    color: #2942EE;
+    line-height: 40px;
 }
 
 .index-body .nav-item {
