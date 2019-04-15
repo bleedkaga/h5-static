@@ -1,3 +1,7 @@
+function range(a, b) {
+    return Math.floor(Math.random() * (b - a) + a);
+}
+
 (function () {
     var _window = $(window);
     var _body = $(document.body);
@@ -43,16 +47,39 @@
         $(".fixed_box").css("left", sl);
     }).trigger("scroll");
 
-    var mySwiper = $('.epiboly-sc').swiper({
-        loop: true,
-        pagination : '.pagination',
-        paginationClickable :true,
-    });
+    if($.fn.swiper){
+        var mySwiper = $('.epiboly-sc').swiper({
+            loop: true,
+            pagination : '.pagination',
+            paginationClickable :true,
+        });
 
-    $('.epiboly-prev').on('click', function () {
-        mySwiper.swipePrev();
-    });
-    $('.epiboly-next').on('click', function () {
-        mySwiper.swipeNext();
-    })
+        $('.epiboly-prev').on('click', function () {
+            mySwiper.swipePrev();
+        });
+        $('.epiboly-next').on('click', function () {
+            mySwiper.swipeNext();
+        });
+    }
+
+    if (Function.bind && $.fn.parallax) {
+        $(".layer").each(function () {
+            var _this = $(this);
+            if (!_this.data("depth")) {
+                _this.attr("data-depth", range(1000, 2222) / 10000);
+            }
+        });
+        $(".parallax_box").parallax({
+            // calibrateX: false,
+            // calibrateY: true,
+            // invertX: false,
+            // invertY: true,
+            // limitX: false,
+            // limitY: 10,
+            // scalarX: 2,
+            // scalarY: 8,
+            // frictionX: 0.2,
+            // frictionY: 0.8
+        });
+    }
 })();

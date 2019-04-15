@@ -5,14 +5,15 @@
 <div class="content">
 
     <div class="section1">
-        <div class="inline">
-            <h1 class="title">合作关系，如沐春风</h1>
+        <div class="bg-box"><img class="iv_image" src="<%=staticPath%>/images/index3/banner.png"></div>
+        <div class="inline parallax_box">
+            <h1 class="title layer">合作关系，如沐春风</h1>
             <div class="desc">
-                帮助每一个组织建立自己的“内部人力共享平台”<br>
-                实现从人人我有到人人为我用<br>
-                优化组织管理的公平和效率<br>
-                使其更具活力、生命力、成长性<br>
-                最终实现“人人为组织，组织为人人”<br>
+                <p class="p1 layer">帮助每一个组织建立自己的“内部人力共享平台”</p>
+                <p class="p2 layer">实现从人人我有到人人为我用</p>
+                <p class="p3 layer">优化组织管理的公平和效率</p>
+                <p class="p4 layer">使其更具活力、生命力、成长性</p>
+                <p class="p5 layer">最终实现“人人为组织，组织为人人”</p>
             </div>
         </div>
     </div>
@@ -80,4 +81,47 @@
 <%include _footer.html%>
 </body>
 <%include _footer_js.html%>
+<script>
+    var textMap = [
+        {
+            text: '合作关系，如沐春风',
+            o: $('.section1 .inline .title')
+        },
+        {
+            text: '帮助每一个组织建立自己的“内部人力共享平台”',
+            o: $('.section1 .inline .p1')
+        },
+        {
+            text: '实现从人人我有到人人为我用',
+            o: $('.section1 .inline .p2')
+        },
+        {
+            text: '优化组织管理的公平和效率',
+            o: $('.section1 .inline .p3')
+        },
+        {
+            text: '使其更具活力、生命力、成长性',
+            o: $('.section1 .inline .p4')
+        },
+        {
+            text: '最终实现“人人为组织，组织为人人”',
+            o: $('.section1 .inline .p5')
+        }
+    ];
+    var gather = [];
+    textMap.forEach(function (tm) {
+        tm.o.html('');
+        tm.text.split('').forEach(function (t) {
+            tm.o.append('<i>' + t + '</i>');
+        });
+        gather = gather.concat($.makeArray(tm.o.find('i')));
+    });
+
+    TweenMax.set(gather, {autoAlpha: 0});
+    TweenMax.staggerTo(gather, 0.6, {
+        autoAlpha: 1,
+        ease: Power1.easeIn
+    }, 0.04);
+
+</script>
 <%include _end.html%>

@@ -1,11 +1,14 @@
 .section1 {
+  position: relative;
   height: 824px;
-  background-image: url("../images/index2/banner.png");
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /*background-image: url("../images/index2/banner.png");*/
+  /*-webkit-background-size: cover;*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
 }
 .section1 .inline {
+  position: relative;
+  z-index: 2;
   width: 1180px;
   margin: 0 auto;
   padding-top: 139px;
@@ -21,12 +24,17 @@
 .section1 .inline .desc .indent {
   font-size: 35px;
   color: #fff;
-  border-bottom: 2px solid #fff;
-  padding-bottom: 30px;
   display: inline-block;
   margin-top: 89px;
   margin-bottom: 25px;
 }
+
+.section1 .inline .desc .indent i{
+  display: inline-block;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #fff;
+}
+
 .section1 .inline .desc p {
   line-height: 60px;
   font-size: 24px;

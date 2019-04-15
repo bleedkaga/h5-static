@@ -125,6 +125,7 @@ a:focus {
     left: 0;
     background-color: #fff;
     z-index: 999;
+    border-bottom: 1px solid #E5E5E5
 }
 
 .header .logo {
@@ -346,7 +347,7 @@ a:focus {
 
 /*内容容器*/
 .bg-box {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -483,3 +484,6 @@ a:focus {
     background: url(../../images/i2-0.png) center no-repeat;
 }
 
+.layer{
+    position: relative !important;
+}

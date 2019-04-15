@@ -10,6 +10,7 @@ body.active{
     transition: background 233ms;
     background-color: transparent;
     height: 150px;
+    border-bottom: 0;
 }
 
 .index-body .header.shade {
