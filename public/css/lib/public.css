@@ -384,18 +384,18 @@ a:focus {
     text-align:center;
 }
 
-.title {
+.pub-title {
     padding-top: 100px;
     width: 100%;
     text-align: center;
 }
 
-.title span {
+.pub-title span {
     color: #2E334E;
     font-size: 35px;
 }
 
-.title i {
+.pub-title i {
     display: block;
     width: 90px;
     height: 3px;
