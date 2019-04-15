@@ -444,7 +444,7 @@ a:focus {
     display: inline-block;
     width: 14px;
     height: 14px;
-    border-radius: 7px;
+    border-radius: 8px;
     background: #babdc6;
     margin: 0 5px;
     opacity: .8;
