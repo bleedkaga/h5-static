@@ -17,10 +17,11 @@
     var _t2 = $('.t2');
     var _t3a = $('.t3 i');
 
-    text1.split('').forEach(function (t) {
+
+    $.each(text1.split(''), function(i, t){
         _t1.append('<i>' + t + '</i>');
     });
-    text2.split('').forEach(function (t) {
+    $.each(text2.split(''), function(i, t){
         _t2.append('<i>' + t + '</i>');
     });
 
@@ -46,7 +47,7 @@
     TweenMax.set(_i0_4, {y: _i0_4.height(), autoAlpha: 0});
     TweenMax.set(_i0_5, {y: -50, autoAlpha: 0});
     TweenMax.set(_i0_6, {y: -20, autoAlpha: 0, scaleX: 0.3});
-    TweenMax.set(_i0_7, {autoAlpha: 0, scaleX: 0.9});
+    TweenMax.set(_i0_7, {autoAlpha: 0, scaleX: 1});
 
 
     //主要
@@ -57,7 +58,7 @@
             TweenMax.staggerTo(_t3a, 0.4, {
                 autoAlpha: 1,
                 y: 0,
-                ease: Ease.easeIn,
+                ease: Ease.easeIn
             }, 0.1);
         }
     }, 0.05);
@@ -69,9 +70,8 @@
         delay: 1,
         autoAlpha: 1,
         y: 0,
-        ease: Power1.easeOut,
+        ease: Power1.easeOut
     }, 0.1, function () {
-
         TweenMax.to(_i0_5, 0.8, {
             autoAlpha: 1, y: 0, delay: 0, onComplete: function () {
                 TweenMax.to(_i0_5, range(200, 400) / 100, {
@@ -88,7 +88,7 @@
                     scaleX: 1,
                     y: 0,
                     autoAlpha: 1,
-                    ease: Elastic.easeOut.config(1, 0.3),
+                    ease: Elastic.easeOut.config(1, 0.3)
                 });
             }
         });

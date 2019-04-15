@@ -1,11 +1,54 @@
-@import url("./font/iconfont.css");
+@font-face {
+  font-family: "iconfont";
+  src: url('./font/iconfont.eot?t=1555051000538'); /* IE9 */
+  src: url('./font/iconfont.eot?t=1555051000538#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAVkAAsAAAAACkAAAAUXAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDXgqHCIYCATYCJAMcCxAABCAFhG0HZhvgCFGUT06H7COh3LhsKaNImiQswc32COMUQbWG9ezuQQgdkozn8oBCRUUYfmSpYuwLxUbcD2yzf4juWDerMi/buW4DFAs/4kWy60yEX6n3uw+OpX5ag+XZ27tElmVSBlXwAz1Qr8PKRg2ygYwnqjNYXjexGuDXfDWBXtOKIQfjKxoAU9CdAnFNmfWAFXRKBzm0yrrhyCK+k2nTh/QE+Bb9fPynDoykyuieh1fjTDDyF/hPoFzHQUeAwF/OAuU4MjaBQrxttD0HNAlsQvVaf1PqFBjUSupffBLfoG/WN91/4v//AYqFdDwMsn/wKGqhkmSiBlm/iL0M1vwCj0nhl4TXJA+DRkCOQ6OCfDoskjPmQ+4uoJsjBjEMIhEfUdwWWT6FsyRFGhqKydD8YiRk8fhILCAgeNtTw87wKXDwi0bRX4RsEyZJuJfjwu+/jkcPfN4g+ArbexFRbPZ6GxPWxvCfZ69ZFLfP17ROv1gUewUhiOcbvN6piCjUvWraJoy/w6fwI1/wjbBmS+LGgzl7g6dwJt4veHHR/vTNxxq4hBt8w6agRQe4g8GL98ffH/J4xPr48RcPEoSmuPTHouKgV7f3bM5Zb0lszFT+8wbvjs7QLPg6DghNglB0+Pmwq1vyN3ipOe/w+TTqhvma0CtCsrik5njsv0hoLMwvaKmtb2tuaA0WBMOifQS3L4G/ueMMjyuf3uiv/vZuTYU8K8LkTq+MYQ/GpBmjsirl/SOefCd95b475qf8Q6qRTIj0RNYgCMz8JigQ3fX227tQwg44/j2SgrOuFNgqrmRdLsvvyXoUzHnklcXy6jZ5TegtRbq7EYi14gNDf31VItKsXh6NjE6km4Z//HHz8O4xiT9mqZbDOf7kja3hSu7QhETbtpkMuIG8pgQbml730WpHkmV46qDyCboK7EZK9MqkldFRMwbLTr75fmJzcuNCQw8g0yXrtyC94Snj6igNVql9YHlkul+d9hoC8N0dD6UhIVKIH4INyyNpcIZEXyDi5MOtA7rb27sGbDus4+zd/76+UTJaqx1dElr64eciBjW7x+cbnHlGXVl3gbOrQFeepyJK1YVOfqdTaz//hRuY5P99oBeSLWRy+dBBXwcs/vGiLu+t/BXPE/Hf4gLA96eJsrRUqcjYgVqUwZaaKsu+ZORHXx8YQuj1xOADV22ntjM/7P1UNb68QqtMa4W8nmKYAdD9nt9N34JuJTorc6C7lRfmkQDdbtSfOwG6ueicPAGgmyOFfP+X/o6nPRjbHT70Vyy4gJ9C3R8Rb5jtOfjV5Abz/0n+wIZiC6m+KWZ5L0OgcZbjLSfpZW38ia5RHwqKicE+QlvgK5A0piBrLSILdhMqfbag1tqGXhu0x/cZw0BF6cG6uQTCsOOQDHqCbNhTZMF+AJVJ30JtOFDodR7RZ+yzHFTQGIbQs4QJN0zGKSPtJLmRDYrT6wizx65n8sKI0kQwbsqNq+TKclhLOAlmiX3cE8xqliVxkqEd+HhyPcJup3EXQ1sJIyu3sKxrsEJBNj2T3Eg7IMg+BkGPRTDBGUyGoxjRnMhgOiuo8v11CGYednpMR0mLtQmB4UbNj1ORUw5AamXOQSWPstxtAjM1FosUt5EYNAfceFgIdhag4VzN66wIRiw5ywSfy2AKoRU5VCbfXuG4zjPQiz5WEylylKiijiZa7Q3tmUTpneYAEzXFQqmkNoL0YKbKdotHr+5DeqYQDOEMkeJLjLRrMgAA') format('woff2'),
+  url('./font/iconfont.woff?t=1555051000538') format('woff'),
+  url('./font/iconfont.ttf?t=1555051000538') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */ url('./font/iconfont.svg?t=1555051000538#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconyouxiang:before {
+  content: "\e60e";
+}
+
+.icondizhi1:before {
+  content: "\e67d";
+}
+
+.iconkefu:before {
+  content: "\e7b0";
+}
+
+.icondianhua2:before {
+  content: "\e600";
+}
+
+.iconfuzeren:before {
+  content: "\e620";
+}
+
+.icondianhua-copy:before {
+  content: "\e602";
+}
+
+
 .about-container {
   background: #fff;
   border-top: 1px solid #E5E5E5;
 }
 .about-container .about {
   width: 1200px;
-  margin: 105px auto 100px;
+  /*margin: 105px auto 60px;*/
+  margin: auto;
+  padding-top: 105px;
+  padding-bottom: 60px;
 }
 .about-container .about .about-menu {
   font-size: 30px;
@@ -50,7 +93,9 @@
   position: relative;
   float: right;
   width: 959px;
-
+  overflow: hidden;
+  padding: 40px;
+  margin-top: -40px;
   transition: height 500ms;
   -webkit-transition: height 500ms;
   -moz-transition: height 500ms;
@@ -76,10 +121,13 @@
 }
 
 .about-view .menu-box{
+  width: 100%;
   visibility: hidden;
   opacity: 0;
   z-index: 1;
   position: absolute;
+  top: 0;
+  left: 0;
   transform: translateY(20px);
   -webkit-transform: translateY(20px);
   -moz-transform: translateY(20px);
@@ -101,11 +149,19 @@
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   box-shadow: 0 0 30px rgba(0, 26, 102, 0.15);
+  *border: 1px #E9EBF2 solid;
+  border: 1px #E9EBF2 solid \0;
   text-align: center;
-  display: inline-block;
+  display: block;
   margin-bottom: 32px;
   margin-right: 44px;
+  float: left;
 }
+
+:root .about-container .about .about-view .join-us .card {
+  border: none;
+}
+
 .about-container .about .about-view .join-us .card .title {
   font-size: 18px;
   padding-top: 51px;
@@ -115,12 +171,12 @@
 .about-container .about .about-view .join-us .card .button {
   display: inline-block;
   width: 125px;
-  height: 38px;
+  height: 34px;
   border: 2px solid #2942ee;
   border-radius: 18px;
   background: #fff;
   color: #2942ee;
-  line-height: 38px;
+  line-height: 34px;
   opacity: 0.67;
 }
 
@@ -155,14 +211,23 @@
   height: 240px;
   background: #fff;
   box-shadow: 0 0 30px rgba(0, 26, 102, 0.15);
+  *border: 1px #E9EBF2 solid;
+  border: 1px #E9EBF2 solid \0;
   text-align: center;
-  display: inline-block;
+  display: block;
   margin-bottom: 32px;
   margin-right: 34px;
   border-radius: 10px;
+  float: left;
 }
-.about-container .about .about-view .contact-us .card:nth-child(2n) {
-  margin-right: 0;
+
+:root .about-container .about .about-view .contact-us .card{
+  border: none;
+}
+
+/*.about-container .about .about-view .contact-us .card:nth-child(2n),*/
+.about-container .about .about-view .contact-us .card.last{
+  margin-right: 0 !important;
 }
 .about-container .about .about-view .contact-us .card .card-head {
   height: 68px;
