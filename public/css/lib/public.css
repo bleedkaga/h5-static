@@ -90,16 +90,6 @@ a:focus {
     background-size: cover
 }
 
-@media screen and (max-width: 1300px) {
-    .hd_nav_center ul li {
-        margin: 0 30px
-    }
-
-    .hy_page_1 .pagination {
-        bottom: 30px
-    }
-}
-
 .iv_image {
     visibility: hidden;
     opacity: 0;
@@ -454,7 +444,7 @@ a:focus {
     display: inline-block;
     width: 14px;
     height: 14px;
-    border-radius: 7px;
+    border-radius: 8px;
     background: #babdc6;
     margin: 0 5px;
     opacity: .8;
