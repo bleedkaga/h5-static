@@ -90,16 +90,6 @@ a:focus {
     background-size: cover
 }
 
-@media screen and (max-width: 1300px) {
-    .hd_nav_center ul li {
-        margin: 0 30px
-    }
-
-    .hy_page_1 .pagination {
-        bottom: 30px
-    }
-}
-
 .iv_image {
     visibility: hidden;
     opacity: 0;

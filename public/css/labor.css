@@ -1,10 +1,6 @@
 .section1 {
   height: 724px;
   position: relative;
-  /*background-image: url("../images/index3/banner.png");*/
-  /*-webkit-background-size: cover;*/
-  /*background-size: cover;*/
-  /*background-repeat: no-repeat;*/
 }
 .section1 .inline {
   position: relative;
@@ -43,7 +39,46 @@
   background: #E7EDFF;
 }
 .section3 .using {
-  height: 400px;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 140px;
+}
+
+.section3 .using .item {
+  display: block;
+  width: 12.5%;
+  height: 240px;
+  position: relative;
+  background-color: transparent;
+  float: left;
+}
+
+.section3 .using .item .bg-box {
+  border: 2px solid rgba(231, 237, 255, 1);
+
+  transition: filter 5s;
+  -webkit-transition: -webkit-filter 5s;
+  -moz-transition: -moz-filter 5s;
+  -o-transition: -o-filter 5s;
+
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+
+}
+
+.section3 .using .item:hover .bg-box {
+  transition: filter 200ms;
+  -webkit-transition: -webkit-filter 200ms;
+  -moz-transition: -moz-filter 200ms;
+  -o-transition: -o-filter 200ms;
+
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
 }
 
 .epiboly-box{
@@ -52,4 +87,22 @@
   height: 548px;
   margin: 140px auto auto;
   /*overflow: hidden;*/
+}
+
+@media screen and (max-width: 1600px) {
+  .section3 .using .item {
+    height: 198px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .section3 .using .item {
+    height: 173px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .section3 .using .item {
+    height: 153px;
+  }
 }

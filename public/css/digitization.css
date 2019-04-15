@@ -3,10 +3,6 @@
   left: 0;
   top: 0;
   height: 824px;
-  /*background-image: url("../images/index2/banner.png");*/
-  /*-webkit-background-size: cover;*/
-  /*background-size: cover;*/
-  /*background-repeat: no-repeat;*/
 }
 .section1 .inline {
   position: relative;
@@ -66,18 +62,40 @@
   background: #E7EDFF;
 }
 .section3 .ling {
-  display: flex;
-  flex-wrap: wrap;
   padding: 133px 0 140px;
 }
 .section3 .ling .item {
+  display: block;
   width: 12.5%;
   height: 320px;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  float: left;
 }
-.section3 .ling .item img {
+
+.section3 .ling .item span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: opacity 233ms;
+  -webkit-transition: opacity 233ms;
+  -moz-transition: opacity 233ms;
+  -o-transition: opacity 233ms;
 }
+
+.section3 .ling .item:hover span{
+  opacity: 0;
+}
+
 
 .section4 .desc {
   line-height: 38px;
