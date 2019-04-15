@@ -11,7 +11,7 @@
       font-size: 30px;
       width: 154px;
       float: left;
-      margin-top: -48px;
+      margin-top: 140px;
       li{
         height: 135px;
         line-height: 135px;
@@ -19,6 +19,9 @@
         color: #2E334E;
         cursor: pointer;
         text-align: center;
+        span{
+          line-height: 1;
+        }
       }
       li.active{
         font-size: 38px;
@@ -46,11 +49,15 @@
         line-height: 38px;
         font-size: 18px;
         color: #2E334E;
+        margin-top: 180px;
+        text-align: justify;
         b{
           font-size: 24px;
         }
       }
       .join-us{
+        margin-top: 180px;
+
         .card{
           width: 380px;
           height: 180px;

@@ -12,7 +12,7 @@
   font-size: 30px;
   width: 154px;
   float: left;
-  margin-top: -48px;
+  margin-top: 140px;
 }
 .about-container .about .about-menu li {
   height: 135px;
@@ -21,6 +21,9 @@
   color: #2E334E;
   cursor: pointer;
   text-align: center;
+}
+.about-container .about .about-menu li span {
+  line-height: 1;
 }
 .about-container .about .about-menu li.active {
   font-size: 38px;
@@ -48,9 +51,14 @@
   line-height: 38px;
   font-size: 18px;
   color: #2E334E;
+  margin-top: 180px;
+  text-align: justify;
 }
 .about-container .about .about-view .about-us b {
   font-size: 24px;
+}
+.about-container .about .about-view .join-us {
+  margin-top: 180px;
 }
 .about-container .about .about-view .join-us .card {
   width: 380px;
