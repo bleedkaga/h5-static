@@ -32,5 +32,4 @@ build
 .vscode
 .cache-loader
 jsconfig.json
-public/*
 yarn.lock
