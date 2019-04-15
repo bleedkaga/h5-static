@@ -1,0 +1,51 @@
+<div class="header fixed_box min_w">
+    <i class="logo hvr-forward"></i>
+    <div class="nav-container">
+        <ul class="nav">
+            <li>
+                <a href="/index"
+                <% if (active == '/index') { %> class="nav-item active"
+                <% } else { %>
+                class="nav-item"
+                <% } %>
+                data-index="0">
+                首页
+                <span><i class="ma0"></i><i class="ma1"></i><i class="ma2"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="/digitization"
+                <% if (active == '/digitization') { %> class="nav-item active"
+                <% } else { %>
+                class="nav-item"
+                <% } %>
+                data-index="1">
+                数字化零工
+                <span><i class="ma0"></i><i class="ma1"></i><i class="ma2"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="nav-item" data-index="2">
+                    按需用工
+                    <span><i class="ma0"></i><i class="ma1"></i><i class="ma2"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="nav-item" data-index="3">
+                    应用介绍
+                    <span><i class="ma0"></i><i class="ma1"></i><i class="ma2"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="nav-item" data-index="4">
+                    关于我们
+                    <span><i class="ma0"></i><i class="ma1"></i><i class="ma2"></i></span>
+                </a>
+            </li>
+            <div class="f-clear"></div>
+        </ul>
+    </div>
+    <div class="header-btns">
+        <a href="javascript:;">企业登录</a><a href="javascript:;">收入领取</a>
+    </div>
+</div>

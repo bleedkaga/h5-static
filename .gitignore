@@ -34,4 +34,7 @@ build
 jsconfig.json
 public/*
 yarn.lock
+<<<<<<< HEAD
 index-old.html
+=======
+>>>>>>> 7c3e8d409cc4432f76e32ee4dfb24822b57185b1

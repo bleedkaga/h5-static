@@ -2,15 +2,117 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3d576e1-a7b4-463a-804c-0b04af39a58b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/_end.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/_footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/_footer_js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/_header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/_html5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/digitization.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/org-compensation-official.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/about.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/about.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/about.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font/demo_index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font/iconfont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font/iconfont.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/font/iconfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index2.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index2.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index3.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index3.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index4.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index4.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/lib/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/lib/hover.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/lib/magic.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/lib/public.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/lib/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/banner@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/commet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index2/banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index2/ling.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index2/map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index2/矢量智能对象.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index2/矢量智能对象@2x(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index2/矢量智能对象@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index2/组 1(2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index2/组 1@2x(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index2/组 1@2x(2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index2/组 1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index3/banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index3/组 3@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/形状 10@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/形状 11@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/形状 12@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/形状 1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/形状 3@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/形状 4@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/形状 5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/index4/形状 8@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/platform.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/图层 13@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/矢量智能对象(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/矢量智能对象.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/矢量智能对象@2x(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/矢量智能对象@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/组 1(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/组 1(2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/组 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/组 1@2x(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/组 1@2x(2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/组 1@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/评价@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-old.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-old.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/digitization.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/ImageView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/TweenMax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/html5Support/respond.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/swiper/2.7.6/idangerous.swiper.progress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/swiper/2.7.6/idangerous.swiper.progress.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/swiper/2.7.6/idangerous.swiper2.7.6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/swiper/2.7.6/idangerous.swiper2.7.6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/swiper/2.7.6/idangerous.swiper2.7.6.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/swiper/3.4.2/swiper-3.4.2.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/swiper/3.4.2/swiper-3.4.2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/swiper/3.4.2/swiper-3.4.2.min.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,12 +124,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/index-old.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+            <state relative-caret-position="260">
+              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -58,10 +160,10 @@
         <option value="$PROJECT_DIR$/index-old.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/css/index.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/about.scss" />
         <option value="$PROJECT_DIR$/css/lib/public.css" />
         <option value="$PROJECT_DIR$/about.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -76,22 +178,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="org-compensation-official" type="b2602c69:ProjectViewProjectNode" />
-              <item name="org-compensation-official" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="org-compensation-official" type="b2602c69:ProjectViewProjectNode" />
-              <item name="org-compensation-official" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -119,6 +206,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/server.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.server.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -130,6 +227,9 @@
       <option name="presentableId" value="Default" />
       <updated>1555032988344</updated>
       <workItem from="1555032989465" duration="19091000" />
+      <workItem from="1555287813215" duration="782000" />
+      <workItem from="1555288672047" duration="72000" />
+      <workItem from="1555288747752" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://git.goodsogood.com/pc-management/org-compensation-official&#10;&#10;# Conflicts:&#10;#&#9;css/lib/public.css&#10;#&#9;index.html">
       <created>1555053446491</created>
@@ -152,11 +252,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555056642786</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update">
+      <created>1555287940046</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555287940046</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19091000" />
+    <option name="totallyTimeSpent" value="19959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -165,13 +272,13 @@
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14006342" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49947146" visible="true" weight="0.16059226" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.3282241" side_tool="true" weight="0.82687926" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.6009514" weight="0.04328018" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.39904863" side_tool="true" weight="0.04328018" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.6717759" weight="0.42938498" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49947146" weight="0.4168565" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -180,6 +287,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.14006342" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.6009514" visible="true" weight="0.04328018" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.39904863" side_tool="true" visible="true" weight="0.04328018" />
+      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.6717759" weight="0.42938498" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49947146" weight="0.4168565" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -219,58 +345,34 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge branch 'master' of https://git.goodsogood.com/pc-management/org-compensation-official&#10;&#10;# Conflicts:&#10;#&#9;css/lib/public.css&#10;#&#9;index.html" />
     <MESSAGE value="remove arrow function" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove arrow function" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/font/demo_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="281" column="6" lean-forward="true" selection-start-line="281" selection-start-column="6" selection-end-line="281" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/lib/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/font/iconfont.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1352">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index2.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/css/font/demo_index.html" />
+    <entry file="file://$PROJECT_DIR$/js/jquery.min.js" />
+    <entry file="file://$PROJECT_DIR$/css/lib/reset.css" />
+    <entry file="file://$PROJECT_DIR$/css/font/iconfont.css" />
+    <entry file="file://$PROJECT_DIR$/index2.html" />
+    <entry file="file://$PROJECT_DIR$/css/index2.scss" />
     <entry file="file://$PROJECT_DIR$/index4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -278,20 +380,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index3.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-old.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index3.scss" />
     <entry file="file://$PROJECT_DIR$/css/index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -299,23 +388,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index4.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="88" column="13" lean-forward="true" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/html5Support/respond.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index4.scss" />
+    <entry file="file://$PROJECT_DIR$/js/html5Support/respond.min.js" />
     <entry file="file://$PROJECT_DIR$/css/about.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -323,28 +397,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3468">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css" />
     <entry file="file://$PROJECT_DIR$/css/index.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="55" lean-forward="true" selection-start-column="55" selection-end-column="55" />
         </state>
       </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/ImageView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ImageView.js" />
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -352,31 +414,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/lib/public.css" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="61" column="38" lean-forward="true" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digitization.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="107" column="14" selection-start-line="107" selection-start-column="14" selection-end-line="107" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="96" column="14" lean-forward="true" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="57" column="26" lean-forward="true" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+        <state relative-caret-position="-1144">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/lib/public.css">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="326" column="17" lean-forward="true" selection-start-line="326" selection-start-column="17" selection-end-line="326" selection-end-column="17" />
+        <state relative-caret-position="234">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/index-old.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        <state relative-caret-position="260">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
         </state>
       </provider>
     </entry>
