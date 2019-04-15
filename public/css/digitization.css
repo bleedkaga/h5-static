@@ -61,6 +61,7 @@
 .section3 .ling .item {
   width: 12.5%;
   height: 320px;
+  float: left;
 }
 .section3 .ling .item img {
   width: 100%;

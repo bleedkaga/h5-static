@@ -369,17 +369,15 @@ a:focus {
 .underline {
     position: relative;
 }
-.underline:after{
-     content: '';
-     width: 90px;
-     height: 3px;
-     background: #000;
-     display: inline-block;
-     position:absolute;
-     bottom:-30px;
-     left:50%;
-     margin-left: -45px;
- }
+.underline .inline{
+    position: absolute;
+    left: 50%;
+    bottom:-30px;
+    width: 90px;
+    height: 3px;
+    background: #000;
+    margin-left: -45px;
+}
 .text-center{
     text-align:center;
 }
