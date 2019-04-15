@@ -97,7 +97,7 @@ app.listen(3000, (err) => {
     if (err) {
         return console.log(err);
     }
-    console.log(`dev服务已启动请等待编译完成 port:3000......`);
+    console.log(`服务已启动 http://127.0.0.1:3000......`);
 });
 
 

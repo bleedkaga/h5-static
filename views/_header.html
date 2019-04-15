@@ -25,19 +25,34 @@
                 </a>
             </li>
             <li>
-                <a href="javascript:;" class="nav-item" data-index="2">
+                <a href="/labor"
+                <% if (active == '/labor') { %> class="nav-item active"
+                <% } else { %>
+                class="nav-item"
+                <% } %>
+                data-index="2">
                     按需用工
                     <span><i class="ma0"></i><i class="ma1"></i><i class="ma2"></i></span>
                 </a>
             </li>
             <li>
-                <a href="javascript:;" class="nav-item" data-index="3">
+                <a href="/recommend"
+                <% if (active == '/recommend') { %> class="nav-item active"
+                <% } else { %>
+                class="nav-item"
+                <% } %>
+                data-index="3">
                     应用介绍
                     <span><i class="ma0"></i><i class="ma1"></i><i class="ma2"></i></span>
                 </a>
             </li>
             <li>
-                <a href="javascript:;" class="nav-item" data-index="4">
+                <a href="/about"
+                <% if (active == '/about') { %> class="nav-item active"
+                <% } else { %>
+                class="nav-item"
+                <% } %>
+                data-index="4">
                     关于我们
                     <span><i class="ma0"></i><i class="ma1"></i><i class="ma2"></i></span>
                 </a>

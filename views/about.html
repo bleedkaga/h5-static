@@ -1,0 +1,122 @@
+<%include _html5.html%>
+<link rel="stylesheet" href="<%=staticPath%>/css/about.css">
+<body>
+<%-include('_header.html', {active: pathname})%>
+<div class="content">
+    <div class="about-container">
+        <div class="about f-cb">
+            <ul class="about-menu">
+                <li class="active"><span>关于我们</span><i></i></li>
+                <li><span>加入我们</span><i></i></li>
+                <li><span>联系我们</span></li>
+            </ul>
+            <div class="about-view">
+                <div class="hide about-us show">
+                    <b>组织易</b>
+                    是固守至诚科技集团旗下产品，至2011年开始研究和研发一直致力于组织关系、企业管理、数字技术的研发。组织易，中国数字化按需用工服务商。业务重点犹如其名，寓意：为中国企业汇聚万千人才；让行业人有好活，好生活。组织易是为零工市场提供按需用工服务的互联网平台，一边面向企业和广泛组织，一边面向零工。集成辅助服务，由评价专家进行任务标准体系建设，为用工方提供一站式外包交付服务。产品优势:第一是即时性，让用工方随时随地可以找到需要的人才，解决用工荒问题，同时让工人不必再因缺少信息来源而造成劳动力闲置；第二是扁平化结算，用工端到工人端不再经过层层剥削，降低用工方本提高工人收益，并规避财务风险；第三是评价机制，用工方可用积分对服务进行评价，评价影响零工的等级，从而影响其收益和平台权益。
+                    组织易运用基于互联网模式和最新的数字技术，结合最新的财税、社保政策和组织管理模式，服务好企业的同时更是造福数以亿计的零工，为所有劳动者实现伟大的中国梦贡献科技力量！
+                </div>
+
+                <div class="hide join-us ">
+                    <div class="card">
+                        <h1 class="title">注册税务师（北京）</h1>
+                        <button class="button">查看详情 →</button>
+                    </div>
+                    <div class="card">
+                        <h1 class="title">注册税务师（北京）</h1>
+                        <button class="button">查看详情 →</button>
+                    </div>
+                    <div class="card">
+                        <h1 class="title">注册税务师（北京）</h1>
+                        <button class="button">查看详情 →</button>
+                    </div>
+                    <div class="card">
+                        <h1 class="title">注册税务师（北京）</h1>
+                        <button class="button">查看详情 →</button>
+                    </div>
+                </div>
+
+                <div class="hide contact-us ">
+                    <div class="card">
+                        <div class="card-head">
+                            北京（全国运营中心）
+                        </div>
+                        <ul class="info">
+                            <li><i class="iconfont iconfuzeren"></i>李女士</li>
+                            <li><i class="iconfont icondianhua2"></i>13635273333</li>
+                            <li><i class="iconfont icondizhi1"></i>北京市海淀区大钟寺13号院1号楼地下一层A01-18 </li>
+                            <li><i class="iconfont iconyouxiang"></i>lsj@goodsogood.com</li>
+                            <li><i class="iconfont iconkefu"></i>4000010711</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            北京（全国运营中心）
+                        </div>
+                        <ul class="info">
+                            <li>李女士</li>
+                            <li>13635273333</li>
+                            <li>北京市海淀区大钟寺13号院1号楼地下一层A01-18 </li>
+                            <li>lsj@goodsogood.com</li>
+                            <li>4000010711</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            北京（全国运营中心）
+                        </div>
+                        <ul class="info">
+                            <li>李女士</li>
+                            <li>13635273333</li>
+                            <li>北京市海淀区大钟寺13号院1号楼地下一层A01-18 </li>
+                            <li>lsj@goodsogood.com</li>
+                            <li>4000010711</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            北京（全国运营中心）
+                        </div>
+                        <ul class="info">
+                            <li>李女士</li>
+                            <li>13635273333</li>
+                            <li>北京市海淀区大钟寺13号院1号楼地下一层A01-18 </li>
+                            <li>lsj@goodsogood.com</li>
+                            <li>4000010711</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            北京（全国运营中心）
+                        </div>
+                        <ul class="info">
+                            <li>李女士</li>
+                            <li>13635273333</li>
+                            <li>北京市海淀区大钟寺13号院1号楼地下一层A01-18 </li>
+                            <li>lsj@goodsogood.com</li>
+                            <li>4000010711</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%include _footer.html%>
+</body>
+<%include _footer_js.html%>
+<script>
+    $(function(){
+        $('.about-menu li').each(function(index, item) {
+            $(item).click(function(){
+                $(item).addClass('active').siblings().removeClass('active');
+                $('.about-view > *').eq(index).addClass('show').siblings().removeClass('show')
+            })
+        })
+    })
+</script>
+<%include _end.html%>

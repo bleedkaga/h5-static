@@ -1,0 +1,118 @@
+@import url("./font/iconfont.css");
+.about-container {
+  min-height: 980px;
+  background: #fff;
+  border-top: 1px solid #E5E5E5;
+}
+.about-container .about {
+  width: 1200px;
+  margin: 105px auto 100px;
+}
+.about-container .about .about-menu {
+  font-size: 30px;
+  width: 154px;
+  float: left;
+  margin-top: -48px;
+}
+.about-container .about .about-menu li {
+  height: 135px;
+  line-height: 135px;
+  font-size: 30px;
+  color: #2E334E;
+  cursor: pointer;
+  text-align: center;
+}
+.about-container .about .about-menu li.active {
+  font-size: 38px;
+  color: #2942EE;
+}
+.about-container .about .about-menu i {
+  width: 90px;
+  height: 1px;
+  background: #BABDC6;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-container .about .hide {
+  display: none;
+}
+.about-container .about .show {
+  display: block;
+}
+.about-container .about .about-view {
+  float: right;
+  width: 959px;
+}
+.about-container .about .about-view .about-us {
+  line-height: 38px;
+  font-size: 18px;
+  color: #2E334E;
+}
+.about-container .about .about-view .about-us b {
+  font-size: 24px;
+}
+.about-container .about .about-view .join-us .card {
+  width: 380px;
+  height: 180px;
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 26, 102, 0.15);
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 32px;
+  margin-right: 44px;
+}
+.about-container .about .about-view .join-us .card .title {
+  font-size: 18px;
+  padding-top: 51px;
+  font-weight: 600;
+  margin-bottom: 41px;
+}
+.about-container .about .about-view .join-us .card .button {
+  width: 125px;
+  height: 38px;
+  border: 2px solid #2942ee;
+  border-radius: 18px;
+  background: #fff;
+  color: #2942ee;
+}
+.about-container .about .about-view .contact-us .card {
+  width: 460px;
+  height: 240px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 26, 102, 0.15);
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 32px;
+  margin-right: 34px;
+  border-radius: 10px;
+}
+.about-container .about .about-view .contact-us .card:nth-child(2n) {
+  margin-right: 0;
+}
+.about-container .about .about-view .contact-us .card .card-head {
+  height: 68px;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 30px;
+  font-size: 18px;
+  color: #2e334e;
+  line-height: 68px;
+  text-align: left;
+  padding-left: 11px;
+}
+.about-container .about .about-view .contact-us .card .info {
+  text-align: left;
+  padding: 0 44px;
+  margin: 14px 0 21px;
+}
+.about-container .about .about-view .contact-us .card .info li {
+  line-height: 28px;
+  font-size: 14px;
+  color: #2e334e;
+}
+.about-container .about .about-view .contact-us .card .info li .iconfont {
+  color: #294af1;
+  margin-right: 10px;
+}

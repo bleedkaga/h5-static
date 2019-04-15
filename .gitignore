@@ -32,7 +32,6 @@ build
 .vscode
 .cache-loader
 jsconfig.json
-public/*
 yarn.lock
 <<<<<<< HEAD
 index-old.html
