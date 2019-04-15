@@ -7,6 +7,9 @@ const controller = require('require-all')({
 
 router.get('/index', controller.base.index);
 router.get('/digitization', controller.base.digitization);
+router.get('/labor', controller.base.labor);
+router.get('/recommend', controller.base.recommend);
+router.get('/about', controller.base.about);
 
 // 兜底
 router.get('/*', (ctx, next) => {
