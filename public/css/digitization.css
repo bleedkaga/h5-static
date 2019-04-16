@@ -106,8 +106,79 @@
 }
 .section4 .map {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 82px;
-  margin-bottom: 137px;
+  margin: 82px auto 140px;
+  background: url(../images/digitization/map.png) center no-repeat;
+  width: 899px;
+  height: 822px;
+  position: relative;
+}
+
+.section4 .map i{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/digitization/addr.png) center no-repeat;
+  width: 22px;
+  height: 28px;
+}
+
+.section4 .map i.addr-0{
+  left: 636px;
+  top: 286px;
+}
+
+.section4 .map i.addr-1{
+  left: 655px;
+  top: 300px;
+}
+
+.section4 .map i.addr-2{
+  left: 680px;
+  top: 367px;
+}
+
+.section4 .map i.addr-3{
+  left: 491px;
+  top: 374px;
+}
+
+.section4 .map i.addr-4{
+  left: 755px;
+  top: 433px;
+}
+
+.section4 .map i.addr-5{
+  left: 412px;
+  top: 471px;
+}
+
+.section4 .map i.addr-6{
+  left: 777px;
+  top: 485px;
+}
+
+.section4 .map i.addr-7{
+  left: 529px;
+  top: 492px;
+}
+
+.section4 .map i.addr-8{
+  left: 614px;
+  top: 492px;
+}
+
+.section4 .map i.addr-9{
+  left: 669px;
+  top: 533px;
+}
+
+.section4 .map i.addr-10{
+  left: 469px;
+  top: 581px;
+}
+
+.section4 .map i.addr-11{
+  left: 658px;
+  top: 650px;
 }
