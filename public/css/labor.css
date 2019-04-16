@@ -47,6 +47,7 @@
 .section3 .using .item {
   display: block;
   width: 12.5%;
+  *width: 12.45%;
   height: 240px;
   position: relative;
   background-color: transparent;

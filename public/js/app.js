@@ -9,16 +9,16 @@ function isIE() {
 var lastTime = 0;
 var vendors = ['webkit', 'moz', 'o'];
 for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
-    window.requestAnimationFrame = window[`${vendors[x]}RequestAnimationFrame`];
-    window.cancelAnimationFrame = window[`${vendors[x]}CancelAnimationFrame`] || // Webkit中此取消方法的名字变了
-        window[`${vendors[x]}CancelRequestAnimationFrame`];
+    window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+    window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] || // Webkit中此取消方法的名字变了
+        window[vendors[x] + 'CancelRequestAnimationFrame'];
 }
 
 if (!window.requestAnimationFrame) {
     window.requestAnimationFrame = function (callback) {
         var currTime = new Date().getTime();
         var timeToCall = Math.max(0, 16.7 - (currTime - lastTime));
-        var id = window.setTimeout(() => {
+        var id = window.setTimeout(function(){
             callback(currTime + timeToCall);
         }, timeToCall);
         lastTime = currTime + timeToCall;
@@ -137,7 +137,7 @@ var isIEBrowser = isIE();
             500, 500, 'bg');
     };
 
-    if($.fn.swiper){
+    if ($.fn.swiper) {
 
         $('.epiboly-list span').each(function () {
             var _this = $(this);
@@ -151,8 +151,8 @@ var isIEBrowser = isIE();
         var mySwiper = $('.epiboly-sc').swiper({
             speed: 666,
             loop: true,
-            pagination : '.pagination',
-            paginationClickable :true,
+            pagination: '.pagination',
+            paginationClickable: true,
             grabCursor: true,
             progress: !isIEBrowser,
             // onSlideChangeStart: slideChangeStart,

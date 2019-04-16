@@ -136,9 +136,10 @@ a:focus {
 
 .header .header-btns a {
     position: relative;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: block;
+    float: left;
+    /**display: inline;*/
+    /**zoom: 1;*/
     width: 128px;
     height: 44px;
     text-align: center;
