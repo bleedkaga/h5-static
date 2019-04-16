@@ -130,25 +130,48 @@
         </div>
     </div>
 </div>
+<script id="tpls" type="jquery/template">
+    <div class="about-dialog">
+        <div class="t1">企业咨询管理顾问</div>
+        <div class="t2" style="margin-top: 36px;">职位描述</div>
+        <div class="t3" style="margin-top: 28px;">工作职责：</div>
+        <div class="t4" style="margin-top: 20px;">
+            1.结合产品需求与市场趋势，为产品初期规划提供深刻见解与思路；<br/>
+            2.与上下游通力协作，针对产品特性制定可行的产品方案，执行落地并追踪结果；<br/>
+            3.全程跟踪、持续优化产品，提升产品的易用性，达到更好的用户体验;<br/>
+            4.提出创新交互创意，设计出引领行业的交互方式。<br/>
+        </div>
+        <div class="t3" style="margin-top: 28px;">任职资格：</div>
+        <div class="t4" style="margin-top: 20px;">
+            1.结合产品需求与市场趋势，为产品初期规划提供深刻见解与思路；<br/>
+            2.与上下游通力协作，针对产品特性制定可行的产品方案，执行落地并追踪结果；<br/>
+            3.全程跟踪、持续优化产品，提升产品的易用性，达到更好的用户体验;<br/>
+        </div>
+        <div class="t2" style="margin-top: 36px;">工作地点</div>
+        <div class="t4" style="margin-top: 26px;">重庆市南岸区南坪上海城</div>
+    </div>
+</script>
 <%include _footer.html%>
 </body>
 <%include _footer_js.html%>
 <script>
-    $(function(){
-        var _about_view = $('.about-view');
-        var _as = $('.about-menu a');
-        var _menus = $('.about-view .menu-box');
-        _as.each(function(index, item) {
-            $(item).click(function(){
-                _as.removeClass('active');
-                $(item).addClass('active');
-                _menus.removeClass('show');
-                var _targetBox = $('.about-view > *').eq(index);
-                var h = _targetBox.addClass('show').data('height');
-                _about_view.css('height', h);
-            })
-        });
-        _as.eq(0).trigger('click');
-    })
+    var _about_view = $('.about-view');
+    var _as = $('.about-menu a');
+    var _menus = $('.about-view .menu-box');
+    _as.each(function (index, item) {
+        $(item).click(function () {
+            _as.removeClass('active');
+            $(item).addClass('active');
+            _menus.removeClass('show');
+            var _targetBox = $('.about-view > *').eq(index);
+            var h = _targetBox.addClass('show').data('height');
+            _about_view.css('height', h);
+        })
+    });
+    _as.eq(0).trigger('click');
+
+    $('.join-us .button').on('click', function () {
+        window.showDialog($('#tpls').html(), 800, 600);
+    });
 </script>
 <%include _end.html%>

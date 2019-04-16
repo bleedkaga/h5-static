@@ -7,6 +7,7 @@ let router = require('./router');
 const koaStatic = require('koa-static-server');
 const koaBody = require('koa-body');
 const views = require('koa-views');
+const Config = require('./config');
 
 const app = new Koa();
 
@@ -65,6 +66,7 @@ app.use(async (ctx, next) => {
     ctx.state = {
         staticPath: RES_HOST,
         pathname: ctx.url,
+        loginEntrance: Config.loginEntrance,
     };
     return next();
 });

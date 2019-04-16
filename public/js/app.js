@@ -37,6 +37,7 @@ var isIEBrowser = isIE();
 (function () {
     var _window = $(window);
     var _body = $(document.body);
+    var _html = $('html');
     var WW = 0;
     var WH = 0;
     var _WResetTimer = null;
@@ -78,6 +79,63 @@ var isIEBrowser = isIE();
         var sl = -Math.max(document.body.scrollLeft, document.documentElement.scrollLeft);
         $(".fixed_box").css("left", sl);
     }).trigger("scroll");
+
+    //弹框
+    _body.append('<div class="min_w dialog">' +
+        '<div class="shade"></div>' +
+        '<div class="dialog-box">' +
+        '<button class="dialog-close" onclick="hideDialog();"></button>' +
+        '<div class="dialog-content"></div>' +
+        '</div>' +
+        '</div>');
+
+    var _dialog = $('.dialog');
+
+    window.showDialog = function (content, width, height, css) {
+        width = width || 500;
+        height = height || 500;
+        var _box = _dialog.find('.dialog-box');
+        var _content = _dialog.find('.dialog-content');
+        var _shade = _dialog.find('.shade');
+        _content.html(content);
+        _dialog[0].className = '';
+        _dialog.addClass('min_w dialog' + (css ? ' ' + css : ''));
+        _box.css({
+            width: width,
+            minHeight: height,
+            marginLeft: width / 2 * -1,
+            marginTop: height / 2 * -1
+        });
+        _html.addClass('dialog-show');
+
+        TweenMax.set(_shade, {autoAlpha: 0});
+        TweenMax.set(_box, {autoAlpha: 0, y: 300});
+        setTimeout(function () {
+            TweenMax.to(_shade, 0.233, {autoAlpha: 0.5, ease: Power1.easeOut});
+            TweenMax.to(_box, 0.233, {autoAlpha: 1, y: 0, ease: Power1.easeOut});
+        }, 16);
+    };
+
+    window.hideDialog = function () {
+        var _box = _dialog.find('.dialog-box');
+        var _shade = _dialog.find('.shade');
+        TweenMax.to(_shade, 0.233, {autoAlpha: 0, ease: Power1.easeOut});
+        TweenMax.to(_box, 0.233, {
+            autoAlpha: 0, y: -300, ease: Power1.easeOut, onComplete: function () {
+                _html.removeClass('dialog-show');
+            }
+        });
+    };
+
+    window.showCodeDialog = function () {
+        window.showDialog(
+            '<div style="color: #2942EE;font-size: 24px;padding-top: 88px;text-align: center;width: 100%;font-weight:bold;">关注组织易服务号领取收入</div>' +
+            '<div style="width: 270px;height: 270px;margin: 20px auto auto;">' +
+            '<img style="display: block;width: 100%;" src="' + window.staticPath + '/images/code.png"/>' +
+            '</div>' +
+            '<div style="color: #666;width: 100%;text-align: center;font-size: 16px;margin-top: 30px;">扫描二维码关注</div>',
+            500, 500, 'bg');
+    };
 
     if($.fn.swiper){
 
