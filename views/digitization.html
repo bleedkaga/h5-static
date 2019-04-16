@@ -50,53 +50,24 @@
         <div class="pub-title"><span>零工分布</span><i></i></div>
 
         <p class="desc">全国已有10余城市20000余人入驻组织易平台</p>
-        <img class="map" src="<%=staticPath%>/images/digitization/maps.png" alt="">
+        <div class="map">
+            <i class="addr-0"></i>
+            <i class="addr-1"></i>
+            <i class="addr-2"></i>
+            <i class="addr-3"></i>
+            <i class="addr-4"></i>
+            <i class="addr-5"></i>
+            <i class="addr-6"></i>
+            <i class="addr-7"></i>
+            <i class="addr-8"></i>
+            <i class="addr-9"></i>
+            <i class="addr-10"></i>
+            <i class="addr-11"></i>
+        </div>
     </div>
 </div>
 <%include _footer.html%>
 </body>
 <%include _footer_js.html%>
-<script>
-    var textMap = [
-        {
-            text: '心灵自由和为结果而战并不矛盾',
-            o: $('.section1 .inline .title')
-        },
-        {
-            text: '有一群人',
-            o: $('.section1 .inline .indent')
-        },
-        {
-            text: '他们有情怀、有知识、有技术',
-            o: $('.section1 .inline .p1')
-        },
-        {
-            text: '他们为灵魂自由而欢愉',
-            o: $('.section1 .inline .p2')
-        },
-        {
-            text: '但他们更希望为了明确的目标和结果而战',
-            o: $('.section1 .inline .p3')
-        },
-        {
-            text: '灵魂不灭，热血不冷，战斗不息，生命不止',
-            o: $('.section1 .inline .p4')
-        }
-    ];
-    var gather = [];
-    $.each(textMap, function (i, tm) {
-        tm.o.html('');
-        $.each(tm.text.split(''), function (i, t) {
-            tm.o.append('<i>' + t + '</i>');
-        });
-        gather = gather.concat($.makeArray(tm.o.find('i')));
-    });
-
-    TweenMax.set(gather, {autoAlpha: 0});
-    TweenMax.staggerTo(gather, 0.6, {
-        autoAlpha: 1,
-        ease: Power1.easeIn
-    }, 0.05);
-
-</script>
+<script src="<%=staticPath%>/js/digitization.js"></script>
 <%include _end.html%>
