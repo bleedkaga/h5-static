@@ -136,9 +136,10 @@ a:focus {
 
 .header .header-btns a {
     position: relative;
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+    display: block;
+    float: left;
+    /**display: inline;*/
+    /**zoom: 1;*/
     width: 128px;
     height: 44px;
     text-align: center;
@@ -529,3 +530,71 @@ a:focus {
 .layer {
     position: relative !important
 }
+
+/*弹框*/
+html.dialog-show, html.dialog-show body {
+    overflow: hidden;
+}
+
+html.dialog-show .dialog{
+    display: block;
+    pointer-events: auto;
+}
+
+.dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: none;
+    pointer-events: none;
+}
+
+.dialog .shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    z-index: 1;
+}
+
+.dialog .dialog-box{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    /*width: 500px;*/
+    /*height: 500px;*/
+    /*margin-left: -250px;*/
+    /*margin-top: -250px;*/
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+
+.dialog .dialog-close{
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 29px;
+    border: none;
+    top: 0;
+    right: 23px;
+    background: #fff url(../../images/close.png) center no-repeat;
+    z-index: 10;
+}
+
+.dialog .dialog-close:active{
+    opacity: 0.8;
+}
+
+.dialog.bg .dialog-box{
+    background: #fff url(../../images/box.png) center no-repeat;
+}
+

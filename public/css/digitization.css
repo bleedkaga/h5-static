@@ -63,10 +63,12 @@
 }
 .section3 .ling {
   padding: 133px 0 140px;
+  font-size: 0;
 }
 .section3 .ling .item {
   display: block;
   width: 12.5%;
+  *width: 12.45%;
   height: 320px;
   position: relative;
   top: 0;
@@ -76,6 +78,7 @@
   border: none;
   float: left;
 }
+
 
 .section3 .ling .item span {
   display: block;
